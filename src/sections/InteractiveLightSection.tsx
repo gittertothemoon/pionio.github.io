@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { useTheme } from '../contexts/ThemeContext';
 import { Container } from '../components/layout/Container';
+import lampadina from '../assets/lampadina.svg';
 
 export const InteractiveLightSection: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -699,7 +700,7 @@ export const InteractiveLightSection: React.FC = () => {
 
                 {/* Lightbulb Image */}
                 <motion.img
-                  src="/src/assets/lampadina.svg"
+                  src={lampadina}
                   alt="Interactive Lightbulb"
                   className="w-full h-full relative z-10 object-contain"
                   animate={{
