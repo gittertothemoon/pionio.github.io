@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/pionio-portfolio/', // Sostituisci con il nome del tuo repository GitHub
+  base: '/', // Base URL per GitHub Pages User site (pionio.github.io)
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
