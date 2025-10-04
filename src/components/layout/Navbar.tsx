@@ -48,14 +48,9 @@ export const Navbar: React.FC = () => {
       )}
     >
       <Container className="flex h-28 md:h-32 lg:h-36 items-center justify-between px-4 md:px-6">
-        {/* Left side: Language Switch on mobile, spacer on desktop */}
+        {/* Left side: Spacer */}
         <div className="flex items-center">
-          <LanguageSwitch 
-            current={locale} 
-            onSwitch={switchLocale} 
-            className="md:hidden" 
-          />
-          <div className="hidden md:block w-24"></div>
+          <div className="w-24"></div>
         </div>
 
         {/* Center: Logo on both mobile and desktop */}
@@ -297,6 +292,21 @@ export const Navbar: React.FC = () => {
                   ))}
                 </motion.nav>
                 
+                {/* Language Switch in Mobile Menu */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  className="mt-8 pt-6 border-t border-brand-400/20"
+                >
+                  <div className="flex items-center justify-center">
+                    <LanguageSwitch 
+                      current={locale} 
+                      onSwitch={switchLocale} 
+                      className="flex" 
+                    />
+                  </div>
+                </motion.div>
 
               </Container>
             </motion.div>
