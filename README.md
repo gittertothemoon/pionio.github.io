@@ -111,6 +111,34 @@ npm run preview
 npm run lint
 ```
 
+## 🌐 Deploy su GitHub Pages
+
+### Setup Automatico (Raccomandato)
+
+1. **Crea repository su GitHub** chiamato `pionio-portfolio`
+2. **Connetti il repository locale**:
+   ```bash
+   git remote add origin https://github.com/TUO_USERNAME/pionio-portfolio.git
+   git branch -M main
+   git push -u origin main
+   ```
+3. **Abilita GitHub Pages**:
+   - Vai su Settings > Pages nel repository
+   - Source: seleziona "GitHub Actions"
+   - Il deploy si avvierà automaticamente ad ogni push su `main`
+
+### Deploy Manuale
+```bash
+npm run deploy
+```
+
+### Configurazione
+- **Vite Config**: Base URL configurato per GitHub Pages in `vite.config.ts`
+- **GitHub Actions**: Workflow automatico in `.github/workflows/deploy.yml`
+- **URL Produzione**: `https://TUO_USERNAME.github.io/pionio-portfolio/`
+
+> **⚠️ Importante**: Sostituisci `TUO_USERNAME` in `vite.config.ts` con il tuo username GitHub effettivo
+
 ### Dipendenze Principali
 ```json
 {
