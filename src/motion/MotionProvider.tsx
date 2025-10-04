@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useMemo, useEffect, useState } from 'react';
 import { motion, Variants } from 'framer-motion';
 
@@ -69,7 +70,7 @@ export const Reveal: React.FC<{
   once?: boolean;
 }> = ({ children, distance, delay, duration, as = 'div', className, once = true }) => {
   const { reveal, tokens, reducedMotion } = useMotionSystem();
-  const Base = as as any;
+  const Base = as as keyof JSX.IntrinsicElements;
   const Tag = motion(Base);
   
   if (reducedMotion) {
@@ -98,7 +99,7 @@ export const Stagger: React.FC<{
   className?: string;
 }> = ({ children, as = 'div', delay = 0, stagger, className }) => {
   const { tokens, reducedMotion } = useMotionSystem();
-  const Base = as as any;
+  const Base = as as keyof JSX.IntrinsicElements;
   const Tag = motion(Base);
   
   if (reducedMotion) {
@@ -132,7 +133,7 @@ export const StaggerItem: React.FC<{ children: React.ReactNode; index?: number; 
 };
 
 // Hook to build a counter animation for metrics (soft ease)
-export const useSoftCounter = (value: number, duration = 1.2) => {
+export const useSoftCounter = (value: number, _duration = 1.2) => {
   // This will be integrated when metrics need animated counting; placeholder for future expansion.
   return value;
 };

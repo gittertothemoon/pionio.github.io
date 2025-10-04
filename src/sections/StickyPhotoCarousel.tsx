@@ -185,7 +185,7 @@ const StickyImageComponent: React.FC<StickyImageComponentProps> = ({
 
 export const StickyPhotoCarousel: React.FC = () => {
   const { locale } = useI18n();
-  const { tokens, reducedMotion } = useMotionSystem();
+  const { reducedMotion } = useMotionSystem();
   const { theme } = useTheme();
   const containerRef = useRef<HTMLDivElement>(null);
   const stickyRef = useRef<HTMLDivElement>(null);

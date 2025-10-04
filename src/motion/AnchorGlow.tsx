@@ -106,6 +106,7 @@ export const AnchorGlow: React.FC<AnchorGlowProps> = ({
   const Component = as;
 
   const commonProps = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ref: ref as any,
     className: baseClasses,
     onClick: handleClick,

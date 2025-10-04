@@ -73,7 +73,7 @@ export const Scrollytelling: React.FC<ScrollytellingProps> = ({
     return (
       <div className={className}>
         <div className="space-y-16">
-          {steps.map((step, i) => (
+          {steps.map((step, _i) => (
             <div key={step.id} className="space-y-8">
               {/* Image for each step on mobile */}
               <div className="relative">{stickyImage}</div>
