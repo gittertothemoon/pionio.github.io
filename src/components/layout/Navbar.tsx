@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
 
         {/* Center: Logo on both mobile and desktop */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <Logo size="md" className="md:hidden" />
+          <Logo size="sm" className="md:hidden" />
           <Logo size="xl" className="hidden md:block" />
         </div>
 
