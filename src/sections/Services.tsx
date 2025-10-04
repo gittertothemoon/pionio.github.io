@@ -19,7 +19,7 @@ export const Services: React.FC = () => {
   };
 
   return (
-    <section id="services" className="py-16 md:py-20 lg:py-28 -my-16 relative">
+    <section id="services" className="py-24 md:py-32 lg:py-40 -my-16 relative">
       <Container className="px-4 md:px-6">
         <Reveal as="header" className="mb-12 md:mb-16 max-w-2xl text-center mx-auto">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gradient-green mb-3 md:mb-4 uppercase bg-transparent">{t.services.heading}</h2>

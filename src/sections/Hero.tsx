@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
       ref={ref} 
       id="hero" 
       className={cn(
-        "-mt-28 md:-mt-32 lg:-mt-36 pt-32 md:pt-48 lg:pt-72 pb-24 md:pb-36 lg:pb-48 relative overflow-hidden min-h-[100vh] flex items-center px-4 md:px-6 transition-colors duration-500",
+        "-mt-28 md:-mt-32 lg:-mt-36 pt-32 md:pt-48 lg:pt-72 pb-32 md:pb-48 lg:pb-64 relative overflow-hidden min-h-[100vh] flex items-center px-4 md:px-6 transition-colors duration-500",
         isLight 
           ? "bg-gradient-to-br from-orange-50/80 via-amber-50/60 to-yellow-50/40" 
           : ""
